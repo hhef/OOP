@@ -14,11 +14,12 @@ class Shape:
         return ((self.x - another_shape.x) ** 2 + (self.y - another_shape.y) ** 2) ** 0.5
 
 
-shape = Shape(0, 0, "black")
-shape1 = Shape(3, 4, "orange")
+if __name__ == "__main__":
+    shape = Shape(0, 0, "black")
+    shape1 = Shape(3, 4, "orange")
 
-shape1.describe()
-print(shape1)
-shape.describe()
-print(shape)
-print(shape.distance(shape1))
+    shape1.describe()
+    print(shape1)
+    shape.describe()
+    print(shape)
+    print(shape.distance(shape1))

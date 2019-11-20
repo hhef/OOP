@@ -18,11 +18,12 @@ class BankAccount:
         return f"Account {self.number} with funds ${self.cash}"
 
 
-bank = BankAccount(123)
-print(bank.account_info())
-bank.cash_deposit(500)
-print(bank.account_info())
-bank.cash_withdraw(100)
-print(bank.account_info())
-bank.cash_withdraw(800)
-print(bank.account_info())
+if __name__ == "__main__":
+    bank = BankAccount(123)
+    print(bank.account_info())
+    bank.cash_deposit(500)
+    print(bank.account_info())
+    bank.cash_withdraw(100)
+    print(bank.account_info())
+    bank.cash_withdraw(800)
+    print(bank.account_info())
