@@ -52,6 +52,7 @@ print(dev_2.email)
 mgr_1 = Manager('Chris', 'Rock', 90000, [dev_1])
 print(mgr_1.email)
 mgr_1.add_employee(dev_2)
+mgr_1.print_employees()
 mgr_1.remove_employee(dev_1)
 mgr_1.print_employees()
 
