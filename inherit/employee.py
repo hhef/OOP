@@ -44,12 +44,12 @@ class Manager(Employee):
             print(emp.fullname())
 
 
-dev_1 = Developer("Test", 'User', 50000, 'python')
+dev_1 = Developer("Mark", 'Hamill', 50000, 'Python')
 print(dev_1.email)
 print(dev_1.prog_lang)
-dev_2 = Developer("Test2", 'User2', 60000, 'java')
+dev_2 = Developer("Michał", 'Pol', 60000, 'Java')
 print(dev_2.email)
-mgr_1 = Manager('Test3', 'User3', 90000, [dev_1])
+mgr_1 = Manager('Chris', 'Rock', 90000, [dev_1])
 print(mgr_1.email)
 mgr_1.add_employee(dev_2)
 mgr_1.remove_employee(dev_1)
