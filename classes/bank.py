@@ -4,7 +4,10 @@ class BankAccount:
         self.cash = 0.0
 
     def cash_deposit(self, amount):
-        self.cash += amount if amount > 0 else 0
+        if type(amount) in (int, float):
+            self.cash += amount if amount > 0 else 0
+        else:
+            return "Invalid Value"
 
     def cash_withdraw(self, amount):
         if amount > self.cash:
