@@ -3,4 +3,5 @@
 
 ## General info
 Five classes and four inheriting classes that show my skill of object oriented programming.
+Also created tests for two classes for example I know basic unittests
 

@@ -60,4 +60,3 @@ class TestBankAccount(unittest.TestCase):
         self.bank.cash_deposit(700)
         self.assertEqual(self.bank.account_info(), "Account 123456789 with funds $700.0")
         self.assertEqual(self.bank1.account_info(), "Account 987654321 with funds $0.0")
-
